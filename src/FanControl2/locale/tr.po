@@ -1,0 +1,339 @@
+# FanControl2 Turkish translation
+# Copyright (C) 2026
+# This file is distributed under the same license as the FanControl2 package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FanControl2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-16 19:06+0430\n"
+"PO-Revision-Date: 2026-04-20 01:44+0300\n"
+"Last-Translator: audi06_19 <info@dreamosat-forum.com>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.9\n"
+
+#, python-format
+msgid "%s   %02d C"
+msgstr "%s   %02d C"
+
+msgid "."
+msgstr "."
+
+msgid "3Pin"
+msgstr "3Pin"
+
+msgid "4Pin"
+msgstr "4Pin"
+
+msgid "4Pin (PID)"
+msgstr "4Pin (PID)"
+
+msgid "Action in case of Fan failure"
+msgstr "Fan arızası durumunda yapılacak işlem"
+
+msgid "Auto-Delete Data older than (Days)"
+msgstr "Şu kadar günden eski verileri otomatik sil (Gün)"
+
+#, python-format
+msgid "Auto-Delete older %s Days"
+msgstr "%s günden eskileri otomatik sil"
+
+msgid "Box Shutdown"
+msgstr "Cihazı Kapat"
+
+msgid "Box has no fancontrol hardware -> FC2 deactivated"
+msgstr "Cihazda fan kontrol donanımı yok -> FC2 devre dışı"
+
+msgid "Box shutdown at Temperature (C)"
+msgstr "Şu sıcaklıkta cihazı kapat (C)"
+
+msgid "Cancel"
+msgstr "İptal"
+
+msgid "Check"
+msgstr "Kontrol et"
+
+msgid "Choose path"
+msgstr "Yol seçin"
+
+msgid "Control disabled"
+msgstr "Kontrol devre dışı"
+
+#, python-format
+msgid "Current rpm  %4d"
+msgstr "Mevcut rpm  %4d"
+
+#, python-format
+msgid "Current value: %s"
+msgstr "Mevcut değer: %s"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid "Delete older 48h"
+msgstr "48 saatten eskilerini sil"
+
+#, python-format
+msgid "Disk free : %d MByte"
+msgstr "Boş disk : %d MByte"
+
+msgid "Download"
+msgstr "İndir"
+
+msgid "Enable Console Logging"
+msgstr "Konsol günlüğünü etkinleştir"
+
+msgid "Enable Data Logging"
+msgstr "Veri günlüğünü etkinleştir"
+
+msgid "Enable Event Logging"
+msgstr "Olay günlüğünü etkinleştir"
+
+msgid "Enable Thread use"
+msgstr "Thread kullanımını etkinleştir"
+
+msgid "End temperature C"
+msgstr "Bitiş sıcaklığı C"
+
+msgid "Extended Control Range"
+msgstr "Genişletilmiş Kontrol Aralığı"
+
+msgid "Fan Control"
+msgstr "Fan Kontrol"
+
+msgid "Fan Control 2"
+msgstr "Fan Kontrol 2"
+
+msgid "Fan Control 2 - Monitor"
+msgstr "Fan Kontrol 2 - İzleyici"
+
+msgid "Fan is not working!"
+msgstr "Fan çalışmıyor!"
+
+msgid "Fan off in Idle Mode"
+msgstr "Boşta modunda fan kapalı"
+
+msgid "Fan type"
+msgstr "Fan türü"
+
+msgid "FanControl2 emergency, Box Shutdown now?"
+msgstr "FanControl2 acil durumu, cihaz şimdi kapatılsın mı?"
+
+#, python-format
+msgid "File %s does not exists"
+msgstr "%s dosyası mevcut değil"
+
+#, python-format
+msgid "Filesize : %d %sByte"
+msgstr "Dosya boyutu : %d %sByte"
+
+msgid ""
+"GUI needs a restart to apply the changes.\n"
+"Do you want to Restart the GUI now?"
+msgstr ""
+"Değişikliklerin uygulanması için arayüzün yeniden başlatılması gerekiyor.\n"
+"Arayüzü şimdi yeniden başlatmak istiyor musunuz?"
+
+msgid "Help"
+msgstr "Yardım"
+
+msgid "Information"
+msgstr "Bilgi"
+
+msgid "Initial PWM"
+msgstr "Başlangıç PWM"
+
+msgid "Initial Voltage"
+msgstr "Başlangıç Gerilimi"
+
+msgid "Logging path"
+msgstr "Günlük yolu"
+
+#, python-format
+msgid "Logging-Path: %s"
+msgstr "Günlük Yolu: %s"
+
+#, python-format
+msgid "Max Fan %d rpm at PWM=255 (%s)"
+msgstr "Maks Fan %d rpm @ PWM=255 (%s)"
+
+#, python-format
+msgid "Max Fan %d rpm at PWM=255 and VLT=255 (%s)"
+msgstr "Maks Fan %d rpm @ PWM=255 ve VLT=255 (%s)"
+
+#, python-format
+msgid "Max Fan %d rpm at VLT=255 (%s)"
+msgstr "Maks Fan %d rpm @ VLT=255 (%s)"
+
+#, python-format
+msgid "Min Fan Start %d rpm at PWM=%d"
+msgstr "Min Fan Başlangıcı %d rpm @ PWM=%d"
+
+#, python-format
+msgid "Min Fan Start %d rpm at VLT=%d"
+msgstr "Min Fan Başlangıcı %d rpm @ VLT=%d"
+
+#, python-format
+msgid "Min Fan Start %d rpm at VLT=%d and PWM=0"
+msgstr "Min Fan Başlangıcı %d rpm @ VLT=%d ve PWM=0"
+
+#, python-format
+msgid "Min Fan Stop %d rpm at PWM=%d (%s)"
+msgstr "Min Fan Durması %d rpm @ PWM=%d (%s)"
+
+#, python-format
+msgid "Min Fan Stop %d rpm at VLT=%d (%s)"
+msgstr "Min Fan Durması %d rpm @ VLT=%d (%s)"
+
+#, python-format
+msgid "Min Fan Stop %d rpm at VLT=%d and PWM=0 (%s)"
+msgstr "Min Fan Durması %d rpm @ VLT=%d ve PWM=0 (%s)"
+
+msgid "Number of WebIF-Log-Entries"
+msgstr "WebIF günlük kayıt sayısı"
+
+#, python-format
+msgid "PID Ctl Err %03.2f %%"
+msgstr "PID Ktr Hata %03.2f %%"
+
+#, python-format
+msgid "PWM  %03d"
+msgstr "PWM  %03d"
+
+msgid "Restart GUI now?"
+msgstr "Arayüz şimdi yeniden başlatılsın mı?"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid "Sensors"
+msgstr "Sensörler"
+
+msgid "Show Fan Speed as"
+msgstr "Fan hızını şöyle göster"
+
+msgid "Show Monitor in Extension-Menu"
+msgstr "İzleyiciyi Eklenti menüsünde göster"
+
+msgid "Show Plugin in Extension-Menu"
+msgstr "Eklentiyi Eklenti menüsünde göster"
+
+msgid "Speed"
+msgstr "Hız"
+
+msgid "Static temp C"
+msgstr "Sabit sıcaklık C"
+
+#, python-format
+msgid "Target rpm  %4d"
+msgstr "Hedef rpm  %4d"
+
+msgid "Temperature"
+msgstr "Sıcaklık"
+
+#, python-format
+msgid "Temperature C  %4.1f"
+msgstr "Sıcaklık C  %4.1f"
+
+msgid "Voltage"
+msgstr "Gerilim"
+
+#, python-format
+msgid "Voltage  %03d"
+msgstr "Gerilim  %03d"
+
+msgid "active"
+msgstr "etkin"
+
+msgid "auto"
+msgstr "otomatik"
+
+msgid "below Tunerslot 4"
+msgstr "Tuner yuvası 4 altında"
+
+#, python-format
+msgid "currentRPM:%d targetRPM:%d Temp:%4.1f"
+msgstr "mevcutRPM:%d hedefRPM:%d Sıc:%4.1f"
+
+msgid "disabled"
+msgstr "devre dışı"
+
+msgid "display Info"
+msgstr "Bilgi göster"
+
+msgid "do nothing"
+msgstr "hiçbir şey yapma"
+
+msgid "increases overheating protection to (C)"
+msgstr "aşırı ısınma korumasını yükseltir (C)"
+
+msgid "left near Card-Slot"
+msgstr "Kart yuvasının solu"
+
+msgid "left near Front-CI"
+msgstr "Ön CI'nın solu"
+
+msgid "left of the Battery"
+msgstr "Pilin solu"
+
+msgid "max Speed rpm"
+msgstr "maks Hız rpm"
+
+msgid "min Speed rpm"
+msgstr "min Hız rpm"
+
+msgid "near XILINX Spartan"
+msgstr "XILINX Spartan yakını"
+
+msgid "never"
+msgstr "asla"
+
+msgid "no"
+msgstr "hayır"
+
+msgid "not active"
+msgstr "etkin değil"
+
+msgid "over Security Card"
+msgstr "Güvenlik Kartının üzerinde"
+
+msgid "please set fan type (3Pin or 4Pin)"
+msgstr "lütfen fan türünü ayarlayın (3Pin veya 4Pin)"
+
+msgid "please wait (until 3min)..."
+msgstr "lütfen bekleyin (3 dakikaya kadar)..."
+
+msgid "press Info for HDD-Temp"
+msgstr "HDD sıcaklığı için Info'ya basın"
+
+msgid "read HDD-Temperature in HDD-Standby-Mode"
+msgstr "HDD bekleme modunda HDD sıcaklığını oku"
+
+msgid "readme.txt"
+msgstr "readme.txt"
+
+msgid "setup Fancontol inStandby mode"
+msgstr "Bekleme modunda fan kontrolünü ayarla"
+
+msgid "turn off"
+msgstr "kapat"
+
+msgid "turn on"
+msgstr "aç"
+
+msgid "under the Fan"
+msgstr "Fanın altında"
+
+msgid "under the WLAN"
+msgstr "WLAN'ın altında"
+
+msgid "yes"
+msgstr "evet"
+
+msgid "yes, Except for Recording or HDD"
+msgstr "evet, Kayıt veya HDD hariç"
