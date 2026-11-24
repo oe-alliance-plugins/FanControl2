@@ -19,8 +19,8 @@ msgstr ""
 "X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
 
 #: ../plugin.py:553 ../plugin.py:555 ../plugin.py:559
-#, python-format
-msgid "%s   %02d C"
+#, python-brace-format
+msgid "{name}   {temperature:02d} C"
 msgstr ""
 
 #: ../plugin.py:146
@@ -48,9 +48,9 @@ msgid "Auto-Delete Data older than (Days)"
 msgstr "اطلاعات قدیمی که بصورت خودکار حذف شده اند بر حسب روز"
 
 #: ../FC2webSite.py:243
-#, fuzzy, python-format
-msgid "Auto-Delete older %s Days"
-msgstr "اطلاعات قدیمی که بصورت خودکار حذف شده اند بر حسب روز"
+#, fuzzy, python-brace-format
+msgid "Auto-Delete older {days} Days"
+msgstr "حذف خودکار اطلاعات قدیمی‌تر از {days} روز"
 
 #: ../plugin.py:226
 msgid "Box Shutdown"
@@ -81,13 +81,13 @@ msgid "Control disabled"
 msgstr "کنترل غیر فعال گردید"
 
 #: ../plugin.py:562 ../plugin.py:819
-#, python-format
-msgid "Current rpm  %4d"
-msgstr "%4d   تعداد دور موتور "
+#, python-brace-format
+msgid "Current rpm  {rpm:4d}"
+msgstr "{rpm:4d}   تعداد دور موتور "
 
 #: ../plugin.py:784
-#, python-format
-msgid "Current value: %s"
+#, python-brace-format
+msgid "Current value: {value}"
 msgstr ""
 
 #: ../FC2webSite.py:196 ../FC2webSite.py:232
@@ -99,8 +99,8 @@ msgid "Delete older 48h"
 msgstr "حذف کردن 48 ساعت قبلی"
 
 #: ../FC2webSite.py:189 ../FC2webSite.py:225
-#, python-format
-msgid "Disk free : %d MByte"
+#, python-brace-format
+msgid "Disk free : {size:d} MByte"
 msgstr ""
 
 #: ../FC2webSite.py:192 ../FC2webSite.py:228
@@ -161,14 +161,14 @@ msgid "FanControl2 emergency, Box Shutdown now?"
 msgstr ""
 
 #: ../FC2webSite.py:203 ../FC2webSite.py:240
-#, python-format
-msgid "File %s does not exists"
+#, python-brace-format
+msgid "File {filename} does not exists"
 msgstr ""
 
 #: ../FC2webSite.py:185 ../FC2webSite.py:187 ../FC2webSite.py:221
 #: ../FC2webSite.py:223
-#, python-format
-msgid "Filesize : %d %sByte"
+#, python-brace-format
+msgid "Filesize : {size:d} {unit}Byte"
 msgstr ""
 
 #: ../plugin.py:658
@@ -198,53 +198,53 @@ msgid "Logging path"
 msgstr "مسیر ورود"
 
 #: ../FC2webSite.py:242
-#, python-format
-msgid "Logging-Path: %s"
+#, python-brace-format
+msgid "Logging-Path: {path}"
 msgstr ""
 
 #: ../plugin.py:439
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 ({status})"
 msgstr ""
 
 #: ../plugin.py:461
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 and VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 and VLT=255 ({status})"
 msgstr ""
 
 #: ../plugin.py:477
-#, python-format
-msgid "Max Fan %d rpm at VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at VLT=255 ({status})"
 msgstr ""
 
 #: ../plugin.py:427
-#, python-format
-msgid "Min Fan Start %d rpm at PWM=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at PWM={pwm:d}"
 msgstr ""
 
 #: ../plugin.py:469
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d}"
 msgstr ""
 
 #: ../plugin.py:451
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d and PWM=0"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d} and PWM=0"
 msgstr ""
 
 #: ../plugin.py:433
-#, python-format
-msgid "Min Fan Stop %d rpm at PWM=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at PWM={pwm:d} ({status})"
 msgstr ""
 
 #: ../plugin.py:472
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} ({status})"
 msgstr ""
 
 #: ../plugin.py:454
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d and PWM=0 (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} and PWM=0 ({status})"
 msgstr ""
 
 #: ../plugin.py:604
@@ -252,13 +252,13 @@ msgid "Number of WebIF-Log-Entries"
 msgstr ""
 
 #: ../plugin.py:834
-#, python-format
-msgid "PID Ctl Err %03.2f %%"
+#, python-brace-format
+msgid "PID Ctl Err {error:03.2f} %"
 msgstr ""
 
 #: ../plugin.py:821
-#, python-format
-msgid "PWM  %03d"
+#, python-brace-format
+msgid "PWM  {pwm:03d}"
 msgstr ""
 
 #: ../plugin.py:659
@@ -295,8 +295,8 @@ msgid "Static temp C"
 msgstr "دمای ایستاتیک بر حسب سانتی گراد"
 
 #: ../plugin.py:818
-#, python-format
-msgid "Target rpm  %4d"
+#, python-brace-format
+msgid "Target rpm  {rpm:4d}"
 msgstr ""
 
 #: ../FC2webSite.py:76
@@ -304,8 +304,8 @@ msgid "Temperature"
 msgstr "دما"
 
 #: ../plugin.py:817
-#, python-format
-msgid "Temperature C  %4.1f"
+#, python-brace-format
+msgid "Temperature C  {temperature:4.1f}"
 msgstr ""
 
 #: ../FC2webSite.py:78
@@ -313,8 +313,8 @@ msgid "Voltage"
 msgstr "ولتاژ"
 
 #: ../plugin.py:820
-#, python-format
-msgid "Voltage  %03d"
+#, python-brace-format
+msgid "Voltage  {voltage:03d}"
 msgstr ""
 
 #: ../FC2webSite.py:171 ../FC2webSite.py:207
@@ -330,8 +330,8 @@ msgid "below Tunerslot 4"
 msgstr "زیر تیونر اسلات شماره 4"
 
 #: ../plugin.py:1265
-#, python-format
-msgid "currentRPM:%d targetRPM:%d Temp:%4.1f"
+#, python-brace-format
+msgid "currentRPM:{current:d} targetRPM:{target:d} Temp:{temperature:4.1f}"
 msgstr ""
 
 #: ../plugin.py:199 ../plugin.py:208 ../plugin.py:217

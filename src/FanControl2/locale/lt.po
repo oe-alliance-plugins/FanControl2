@@ -15,9 +15,9 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 
 #: ../plugin.py:553 ../plugin.py:555 ../plugin.py:559
-#, python-format
-msgid "%s   %02d C"
-msgstr "%s   %02d °C"
+#, python-brace-format
+msgid "{name}   {temperature:02d} C"
+msgstr "{name}   {temperature:02d} °C"
 
 #: ../plugin.py:146
 msgid "."
@@ -44,9 +44,9 @@ msgid "Auto-Delete Data older than (Days)"
 msgstr "Automatiškai ištrinti duomenis, senesnius nei (dienų)"
 
 #: ../FC2webSite.py:243
-#, python-format
-msgid "Auto-Delete older %s Days"
-msgstr "Auto-šalinti senesnius, nei %s dienų"
+#, python-brace-format
+msgid "Auto-Delete older {days} Days"
+msgstr "Auto-šalinti senesnius, nei {days} dienų"
 
 #: ../plugin.py:226
 msgid "Box Shutdown"
@@ -77,14 +77,14 @@ msgid "Control disabled"
 msgstr "Valdymo išjungtas"
 
 #: ../plugin.py:562 ../plugin.py:819
-#, python-format
-msgid "Current rpm  %4d"
-msgstr "Dabar aps./min. %4d"
+#, python-brace-format
+msgid "Current rpm  {rpm:4d}"
+msgstr "Dabar aps./min. {rpm:4d}"
 
 #: ../plugin.py:784
-#, python-format
-msgid "Current value: %s"
-msgstr "Dabartinė reikšmė: %s"
+#, python-brace-format
+msgid "Current value: {value}"
+msgstr "Dabartinė reikšmė: {value}"
 
 #: ../FC2webSite.py:196 ../FC2webSite.py:232
 msgid "Delete"
@@ -95,9 +95,9 @@ msgid "Delete older 48h"
 msgstr "Šalinti senesnius 48 val."
 
 #: ../FC2webSite.py:189 ../FC2webSite.py:225
-#, python-format
-msgid "Disk free : %d MByte"
-msgstr "Laisvos vietos : %d MB"
+#, python-brace-format
+msgid "Disk free : {size:d} MByte"
+msgstr "Laisvos vietos : {size:d} MB"
 
 #: ../FC2webSite.py:192 ../FC2webSite.py:228
 msgid "Download"
@@ -157,15 +157,15 @@ msgid "FanControl2 emergency, Box Shutdown now?"
 msgstr "Avarinė situacija, išjungti aparatą dabar?"
 
 #: ../FC2webSite.py:203 ../FC2webSite.py:240
-#, python-format
-msgid "File %s does not exists"
-msgstr "Failo %s nėra"
+#, python-brace-format
+msgid "File {filename} does not exists"
+msgstr "Failo {filename} nėra"
 
 #: ../FC2webSite.py:185 ../FC2webSite.py:187 ../FC2webSite.py:221
 #: ../FC2webSite.py:223
-#, python-format
-msgid "Filesize : %d %sByte"
-msgstr "Failo dydis: % d%sBaitų"
+#, python-brace-format
+msgid "Filesize : {size:d} {unit}Byte"
+msgstr "Failo dydis: {size:d}{unit}Baitų"
 
 #: ../plugin.py:658
 msgid ""
@@ -196,68 +196,68 @@ msgid "Logging path"
 msgstr "Kelias iki žurnalo"
 
 #: ../FC2webSite.py:242
-#, python-format
-msgid "Logging-Path: %s"
-msgstr "Logging-Verzeichnis: %s"
+#, python-brace-format
+msgid "Logging-Path: {path}"
+msgstr "Logging-Verzeichnis: {path}"
 
 #: ../plugin.py:439
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 (%s)"
-msgstr "Maks. aušintuvo %d aps./min. prie PWM=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 ({status})"
+msgstr "Maks. aušintuvo {rpm:d} aps./min. prie PWM=255 ({status})"
 
 #: ../plugin.py:461
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 and VLT=255 (%s)"
-msgstr "Maks. aušintuvo %d aps./min. prie PWM=255 ir VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 and VLT=255 ({status})"
+msgstr "Maks. aušintuvo {rpm:d} aps./min. prie PWM=255 ir VLT=255 ({status})"
 
 #: ../plugin.py:477
-#, python-format
-msgid "Max Fan %d rpm at VLT=255 (%s)"
-msgstr "Maks. aušintuvo %d aps./min. prie VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at VLT=255 ({status})"
+msgstr "Maks. aušintuvo {rpm:d} aps./min. prie VLT=255 ({status})"
 
 #: ../plugin.py:427
-#, python-format
-msgid "Min Fan Start %d rpm at PWM=%d"
-msgstr "Min. aušintuvo paleidimas %d aps./min. prie PWM=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at PWM={pwm:d}"
+msgstr "Min. aušintuvo paleidimas {last:d} aps./min. prie PWM={pwm:d}"
 
 #: ../plugin.py:469
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d"
-msgstr "Min. aušintuvo paleidimas %d aps./min. prie VLT=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d}"
+msgstr "Min. aušintuvo paleidimas {last:d} aps./min. prie VLT={voltage:d}"
 
 #: ../plugin.py:451
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d and PWM=0"
-msgstr "Min. aušintuvo paleidimas %d aps./min. prie VLT=%d ir PWM=0"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d} and PWM=0"
+msgstr "Min. aušintuvo paleidimas {last:d} aps./min. prie VLT={voltage:d} ir PWM=0"
 
 #: ../plugin.py:433
-#, python-format
-msgid "Min Fan Stop %d rpm at PWM=%d (%s)"
-msgstr "Min. aušintuvo sustabdymas %d aps./min. prie PWM=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at PWM={pwm:d} ({status})"
+msgstr "Min. aušintuvo sustabdymas {last:d} aps./min. prie PWM={pwm:d} ({status})"
 
 #: ../plugin.py:472
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d (%s)"
-msgstr "Min. aušintuvo sustabdymas %d aps./min. prie VLT=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} ({status})"
+msgstr "Min. aušintuvo sustabdymas {last:d} aps./min. prie VLT={voltage:d} ({status})"
 
 #: ../plugin.py:454
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d and PWM=0 (%s)"
-msgstr "Min. aušintuvo sustabdymas %d aps./min. prie VLT=%d ir PWM=0 (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} and PWM=0 ({status})"
+msgstr "Min. aušintuvo sustabdymas {last:d} aps./min. prie VLT={voltage:d} ir PWM=0 ({status})"
 
 #: ../plugin.py:604
 msgid "Number of WebIF-Log-Entries"
 msgstr "WebIF žurnalo įrašų skaičius"
 
 #: ../plugin.py:834
-#, python-format
-msgid "PID Ctl Err %03.2f %%"
-msgstr "PID vald. klaida %03.2f %%"
+#, python-brace-format
+msgid "PID Ctl Err {error:03.2f} %"
+msgstr "PID vald. klaida {error:03.2f} %"
 
 #: ../plugin.py:821
-#, python-format
-msgid "PWM  %03d"
-msgstr "PWM  %03d"
+#, python-brace-format
+msgid "PWM  {pwm:03d}"
+msgstr "PWM  {pwm:03d}"
 
 #: ../plugin.py:659
 msgid "Restart GUI now?"
@@ -292,27 +292,27 @@ msgid "Static temp C"
 msgstr "Statinė temp. °C"
 
 #: ../plugin.py:818
-#, python-format
-msgid "Target rpm  %4d"
-msgstr "Objekto aps./min.  %4d"
+#, python-brace-format
+msgid "Target rpm  {rpm:4d}"
+msgstr "Objekto aps./min.  {rpm:4d}"
 
 #: ../FC2webSite.py:76
 msgid "Temperature"
 msgstr "Temperatūra"
 
 #: ../plugin.py:817
-#, python-format
-msgid "Temperature C  %4.1f"
-msgstr "Temperatūra °C  %4.1f"
+#, python-brace-format
+msgid "Temperature C  {temperature:4.1f}"
+msgstr "Temperatūra °C  {temperature:4.1f}"
 
 #: ../FC2webSite.py:78
 msgid "Voltage"
 msgstr "Įtampa"
 
 #: ../plugin.py:820
-#, python-format
-msgid "Voltage  %03d"
-msgstr "Įtampa %03d"
+#, python-brace-format
+msgid "Voltage  {voltage:03d}"
+msgstr "Įtampa {voltage:03d}"
 
 #: ../FC2webSite.py:171 ../FC2webSite.py:207
 msgid "active"
@@ -327,9 +327,9 @@ msgid "below Tunerslot 4"
 msgstr "po 4 imtuvo lizdu"
 
 #: ../plugin.py:1265
-#, python-format
-msgid "currentRPM:%d targetRPM:%d Temp:%4.1f"
-msgstr "Dabar aps./min. :%d Obj. aps./min.:%d Temp:%4.1f"
+#, python-brace-format
+msgid "currentRPM:{current:d} targetRPM:{target:d} Temp:{temperature:4.1f}"
+msgstr "Dabar aps./min. :{current:d} Obj. aps./min.:{target:d} Temp:{temperature:4.1f}"
 
 #: ../plugin.py:199 ../plugin.py:208 ../plugin.py:217
 msgid "disabled"

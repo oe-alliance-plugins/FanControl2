@@ -18,9 +18,9 @@ msgstr ""
 "X-Generator: Poedit 3.9\n"
 
 #: ../plugin.py:553 ../plugin.py:555 ../plugin.py:559
-#, python-format
-msgid "%s   %02d C"
-msgstr "%s   %02d C"
+#, python-brace-format
+msgid "{name}   {temperature:02d} C"
+msgstr "{name}   {temperature:02d} C"
 
 #: ../plugin.py:146
 msgid "."
@@ -47,9 +47,9 @@ msgid "Auto-Delete Data older than (Days)"
 msgstr "Şu kadar günden eski verileri otomatik sil (Gün)"
 
 #: ../FC2webSite.py:243
-#, python-format
-msgid "Auto-Delete older %s Days"
-msgstr "%s günden eskileri otomatik sil"
+#, python-brace-format
+msgid "Auto-Delete older {days} Days"
+msgstr "{days} günden eskileri otomatik sil"
 
 #: ../plugin.py:226
 msgid "Box Shutdown"
@@ -80,14 +80,14 @@ msgid "Control disabled"
 msgstr "Kontrol devre dışı"
 
 #: ../plugin.py:562 ../plugin.py:819
-#, python-format
-msgid "Current rpm  %4d"
-msgstr "Mevcut rpm  %4d"
+#, python-brace-format
+msgid "Current rpm  {rpm:4d}"
+msgstr "Mevcut rpm  {rpm:4d}"
 
 #: ../plugin.py:784
-#, python-format
-msgid "Current value: %s"
-msgstr "Mevcut değer: %s"
+#, python-brace-format
+msgid "Current value: {value}"
+msgstr "Mevcut değer: {value}"
 
 #: ../FC2webSite.py:196 ../FC2webSite.py:232
 msgid "Delete"
@@ -98,9 +98,9 @@ msgid "Delete older 48h"
 msgstr "48 saatten eskilerini sil"
 
 #: ../FC2webSite.py:189 ../FC2webSite.py:225
-#, python-format
-msgid "Disk free : %d MByte"
-msgstr "Boş disk : %d MByte"
+#, python-brace-format
+msgid "Disk free : {size:d} MByte"
+msgstr "Boş disk : {size:d} MByte"
 
 #: ../FC2webSite.py:192 ../FC2webSite.py:228
 msgid "Download"
@@ -159,15 +159,15 @@ msgid "FanControl2 emergency, Box Shutdown now?"
 msgstr "FanControl2 acil durumu, cihaz şimdi kapatılsın mı?"
 
 #: ../FC2webSite.py:203 ../FC2webSite.py:240
-#, python-format
-msgid "File %s does not exists"
-msgstr "%s dosyası mevcut değil"
+#, python-brace-format
+msgid "File {filename} does not exists"
+msgstr "{filename} dosyası mevcut değil"
 
 #: ../FC2webSite.py:185 ../FC2webSite.py:187 ../FC2webSite.py:221
 #: ../FC2webSite.py:223
-#, python-format
-msgid "Filesize : %d %sByte"
-msgstr "Dosya boyutu : %d %sByte"
+#, python-brace-format
+msgid "Filesize : {size:d} {unit}Byte"
+msgstr "Dosya boyutu : {size:d} {unit}Byte"
 
 #: ../plugin.py:658
 msgid ""
@@ -198,68 +198,68 @@ msgid "Logging path"
 msgstr "Günlük yolu"
 
 #: ../FC2webSite.py:242
-#, python-format
-msgid "Logging-Path: %s"
-msgstr "Günlük Yolu: %s"
+#, python-brace-format
+msgid "Logging-Path: {path}"
+msgstr "Günlük Yolu: {path}"
 
 #: ../plugin.py:439
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 (%s)"
-msgstr "Maks Fan %d rpm @ PWM=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 ({status})"
+msgstr "Maks Fan {rpm:d} rpm @ PWM=255 ({status})"
 
 #: ../plugin.py:461
-#, python-format
-msgid "Max Fan %d rpm at PWM=255 and VLT=255 (%s)"
-msgstr "Maks Fan %d rpm @ PWM=255 ve VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at PWM=255 and VLT=255 ({status})"
+msgstr "Maks Fan {rpm:d} rpm @ PWM=255 ve VLT=255 ({status})"
 
 #: ../plugin.py:477
-#, python-format
-msgid "Max Fan %d rpm at VLT=255 (%s)"
-msgstr "Maks Fan %d rpm @ VLT=255 (%s)"
+#, python-brace-format
+msgid "Max Fan {rpm:d} rpm at VLT=255 ({status})"
+msgstr "Maks Fan {rpm:d} rpm @ VLT=255 ({status})"
 
 #: ../plugin.py:427
-#, python-format
-msgid "Min Fan Start %d rpm at PWM=%d"
-msgstr "Min Fan Başlangıcı %d rpm @ PWM=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at PWM={pwm:d}"
+msgstr "Min Fan Başlangıcı {last:d} rpm @ PWM={pwm:d}"
 
 #: ../plugin.py:469
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d"
-msgstr "Min Fan Başlangıcı %d rpm @ VLT=%d"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d}"
+msgstr "Min Fan Başlangıcı {last:d} rpm @ VLT={voltage:d}"
 
 #: ../plugin.py:451
-#, python-format
-msgid "Min Fan Start %d rpm at VLT=%d and PWM=0"
-msgstr "Min Fan Başlangıcı %d rpm @ VLT=%d ve PWM=0"
+#, python-brace-format
+msgid "Min Fan Start {last:d} rpm at VLT={voltage:d} and PWM=0"
+msgstr "Min Fan Başlangıcı {last:d} rpm @ VLT={voltage:d} ve PWM=0"
 
 #: ../plugin.py:433
-#, python-format
-msgid "Min Fan Stop %d rpm at PWM=%d (%s)"
-msgstr "Min Fan Durması %d rpm @ PWM=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at PWM={pwm:d} ({status})"
+msgstr "Min Fan Durması {last:d} rpm @ PWM={pwm:d} ({status})"
 
 #: ../plugin.py:472
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d (%s)"
-msgstr "Min Fan Durması %d rpm @ VLT=%d (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} ({status})"
+msgstr "Min Fan Durması {last:d} rpm @ VLT={voltage:d} ({status})"
 
 #: ../plugin.py:454
-#, python-format
-msgid "Min Fan Stop %d rpm at VLT=%d and PWM=0 (%s)"
-msgstr "Min Fan Durması %d rpm @ VLT=%d ve PWM=0 (%s)"
+#, python-brace-format
+msgid "Min Fan Stop {last:d} rpm at VLT={voltage:d} and PWM=0 ({status})"
+msgstr "Min Fan Durması {last:d} rpm @ VLT={voltage:d} ve PWM=0 ({status})"
 
 #: ../plugin.py:604
 msgid "Number of WebIF-Log-Entries"
 msgstr "WebIF günlük kayıt sayısı"
 
 #: ../plugin.py:834
-#, python-format
-msgid "PID Ctl Err %03.2f %%"
-msgstr "PID Ktr Hata %03.2f %%"
+#, python-brace-format
+msgid "PID Ctl Err {error:03.2f} %"
+msgstr "PID Ktr Hata {error:03.2f} %"
 
 #: ../plugin.py:821
-#, python-format
-msgid "PWM  %03d"
-msgstr "PWM  %03d"
+#, python-brace-format
+msgid "PWM  {pwm:03d}"
+msgstr "PWM  {pwm:03d}"
 
 #: ../plugin.py:659
 msgid "Restart GUI now?"
@@ -294,27 +294,27 @@ msgid "Static temp C"
 msgstr "Sabit sıcaklık C"
 
 #: ../plugin.py:818
-#, python-format
-msgid "Target rpm  %4d"
-msgstr "Hedef rpm  %4d"
+#, python-brace-format
+msgid "Target rpm  {rpm:4d}"
+msgstr "Hedef rpm  {rpm:4d}"
 
 #: ../FC2webSite.py:76
 msgid "Temperature"
 msgstr "Sıcaklık"
 
 #: ../plugin.py:817
-#, python-format
-msgid "Temperature C  %4.1f"
-msgstr "Sıcaklık C  %4.1f"
+#, python-brace-format
+msgid "Temperature C  {temperature:4.1f}"
+msgstr "Sıcaklık C  {temperature:4.1f}"
 
 #: ../FC2webSite.py:78
 msgid "Voltage"
 msgstr "Gerilim"
 
 #: ../plugin.py:820
-#, python-format
-msgid "Voltage  %03d"
-msgstr "Gerilim  %03d"
+#, python-brace-format
+msgid "Voltage  {voltage:03d}"
+msgstr "Gerilim  {voltage:03d}"
 
 #: ../FC2webSite.py:171 ../FC2webSite.py:207
 msgid "active"
@@ -329,9 +329,9 @@ msgid "below Tunerslot 4"
 msgstr "Tuner yuvası 4 altında"
 
 #: ../plugin.py:1265
-#, python-format
-msgid "currentRPM:%d targetRPM:%d Temp:%4.1f"
-msgstr "mevcutRPM:%d hedefRPM:%d Sıc:%4.1f"
+#, python-brace-format
+msgid "currentRPM:{current:d} targetRPM:{target:d} Temp:{temperature:4.1f}"
+msgstr "mevcutRPM:{current:d} hedefRPM:{target:d} Sıc:{temperature:4.1f}"
 
 #: ../plugin.py:199 ../plugin.py:208 ../plugin.py:217
 msgid "disabled"

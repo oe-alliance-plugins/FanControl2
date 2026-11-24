@@ -1,0 +1,28 @@
+<setupxml>
+	<setup key="FanControl2Main" title="Fan Control 2">
+		<item level="0" text="Fan type" description="Select how the fan is controlled.">config.plugins.FanControl.Fan</item>
+		<item level="0" text="Fan off in Idle Mode" description="Select whether the fan is switched off in standby mode.">config.plugins.FanControl.StandbyOff</item>
+		<item level="0" text="min Speed rpm" description="Minimum fan speed in revolutions per minute.">config.plugins.FanControl.minRPM</item>
+		<item level="0" text="max Speed rpm" description="Maximum fan speed in revolutions per minute.">config.plugins.FanControl.maxRPM</item>
+		<item level="0" text="Static temp C" description="Temperature at which the configured minimum fan speed starts.">config.plugins.FanControl.temp</item>
+		<item level="0" text="End temperature C" description="Temperature at which the configured maximum fan speed is reached.">config.plugins.FanControl.tempmax</item>
+		<item level="0" text="Initial Voltage" description="Initial voltage value used for fan control.">config.plugins.FanControl.vlt</item>
+		<item level="0" text="Initial PWM" description="Initial PWM value used for fan control.">config.plugins.FanControl.pwm</item>
+	</setup>
+	<setup key="FanControl2Special" title="Fan Control 2 - Setup">
+		<item level="0" text="Action in case of Fan failure" description="Select the action to take when the fan is not working.">config.plugins.FanControl.ShowError</item>
+		<item level="0" text="Box shutdown at Temperature (C)" description="Temperature at which the receiver performs an emergency shutdown.">config.plugins.FanControl.ShutdownTemp</item>
+		<item level="0" text="increases overheating protection to (C)" description="Additional standby overheating protection threshold.">config.plugins.FanControl.AddOverheat</item>
+		<item level="0" text="read HDD-Temperature in HDD-Standby-Mode" description="Configure HDD temperature reading behavior.">config.plugins.FanControl.CheckHDDTemp</item>
+		<item level="0" text="Show Fan Speed as" description="Select the displayed fan-speed divisor.">config.plugins.FanControl.Multi</item>
+		<item level="0" text="Show Plugin in Extension-Menu" description="Show FanControl2 in the extensions menu." restart="gui">config.plugins.FanControl.FanControlInExtension</item>
+		<item level="0" text="Show Monitor in Extension-Menu" description="Show the FanControl2 monitor in the extensions menu." restart="gui">config.plugins.FanControl.MonitorInExtension</item>
+		<item level="0" text="Enable Console Logging" description="Enable logging to the console.">config.plugins.FanControl.EnableConsoleLog</item>
+		<item level="0" text="Number of WebIF-Log-Entries" description="Maximum number of entries retained in the WebIF log.">config.plugins.FanControl.LogCount</item>
+		<item level="0" text="Logging path" description="Directory used for FanControl2 log and data files.">config.plugins.FanControl.LogPath</item>
+		<item level="0" text="Enable Data Logging" description="Enable periodic data logging.">config.plugins.FanControl.EnableDataLog</item>
+		<item level="0" text="Auto-Delete Data older than (Days)" description="Automatically remove old log data.">config.plugins.FanControl.DeleteData</item>
+		<item level="0" text="Enable Event Logging" description="Enable event logging.">config.plugins.FanControl.EnableEventLog</item>
+		<item level="0" text="Enable Thread use" description="Use worker threads for periodic fan-control updates.">config.plugins.FanControl.EnableThread</item>
+	</setup>
+</setupxml>

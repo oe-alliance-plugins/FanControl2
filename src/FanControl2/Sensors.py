@@ -1,11 +1,10 @@
-class Sensors:
-	# (type, name, unit, directory)
-	TYPE_TEMPERATURE = 0
-	# (type, name, unit, fanid)
-#	TYPE_FAN_RPM = 1
+from .globals import FCGlobals
 
-	def __init__(self):
-		# (type, name, unit, sensor_specific_dict/list)
+
+class Sensors:  # (type, name, unit, directory) - (type, name, unit, fanid) - TYPE_FAN_RPM = 1
+	TYPE_TEMPERATURE = 0
+
+	def __init__(self):  # (type, name, unit, sensor_specific_dict/list)
 		self.sensors_list = []
 		self.addSensors()
 
@@ -18,8 +17,7 @@ class Sensors:
 				count += 1
 		return count
 
-	# returns a list of sensorids of type "type"
-	def getSensorsList(self, type=None):
+	def getSensorsList(self, type=None):  # returns a list of sensorids of type "type"
 		if type is None:
 			return list(range(len(self.sensors_list)))
 		items = []
@@ -41,31 +39,29 @@ class Sensors:
 		value = -1
 		sensor = self.sensors_list[sensorid]
 		if sensor[0] == self.TYPE_TEMPERATURE:
-			f = open("%s/value" % sensor[3], "r")
-			try:
-				value = int(f.readline().strip())
-			except Exception:
-				pass
-			f.close()
+			with open(f"{sensor[3]}/value") as f:
+				try:
+					value = int(f.readline().strip())
+				except Exception:
+					pass
 		return value
 
 	def addSensors(self):
-		import os
-		if os.path.exists("/proc/stb/sensors"):
+		from os import listdir
+		from os.path import exists
+		sensor_path = "/proc/stb/sensors"
+		if exists(sensor_path):
 			sd = []
-			sd = os.listdir("/proc/stb/sensors")
+			sd = listdir(sensor_path)
 			sd.sort()
 			for dirname in sd:
 				if dirname.find("temp", 0, 4) == 0:
-					f = open("/proc/stb/sensors/%s/name" % dirname, "r")
-					name = f.readline().strip()
-					f.close()
-
-					f = open("/proc/stb/sensors/%s/unit" % dirname, "r")
-					unit = f.readline().strip()
-					f.close()
-
-					self.sensors_list.append((self.TYPE_TEMPERATURE, name, unit, "/proc/stb/sensors/%s" % dirname))
+					with open(f"{sensor_path}/{dirname}/name") as f:
+						name = f.readline().strip()
+					with open(f"{sensor_path}/{dirname}/unit") as f:
+						unit = f.readline().strip()
+					self.sensors_list.append((self.TYPE_TEMPERATURE, name, unit, f"{sensor_path}/{dirname}"))
 
 
 sensors = Sensors()
+FCGlobals.sensors = sensors
